@@ -1,0 +1,28 @@
+{
+  "name": "web-scraper-api-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for the Web Scraper API web scraping service",
+  "main": "dist/index.js",
+  "bin": {
+    "web-scraper-api-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": ["mcp", "web-scraping", "cursor", "ai", "scraping"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "web-scraper-api-sdk": "file:../sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.8.3"
+  }
+}
