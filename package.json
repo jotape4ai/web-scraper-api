@@ -1,0 +1,21 @@
+{
+  "name": "web-scraper-api",
+  "version": "1.0.0",
+  "description": "A comprehensive web scraping API with MCP server integration, SDK, and Docker support",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:api",
+    "start:api": "cd api && npm start",
+    "start:dev": "cd api && npm run dev",
+    "install:all": "npm install && cd api && npm install && cd ../sdk && npm install",
+    "build": "cd api && npm run build",
+    "test": "cd api && npm test"
+  },
+  "keywords": ["web-scraping", "api", "crawler", "data-extraction"],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "api",
+    "sdk"
+  ]
+}
